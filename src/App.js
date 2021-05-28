@@ -76,10 +76,10 @@ function App() {
 
         tran.on("receipt", (receipt) => {
           console.log("reciept");
-          resolve(receipt);
+          console.log(receipt)
         });
 
-        tran.on("error", (err) => resolve(err));
+        tran.on("error", console.log);
       });
   }
 
